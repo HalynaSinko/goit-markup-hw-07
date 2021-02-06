@@ -1,0 +1,42 @@
+// header
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: $main-background-color;
+
+  &__nav-site {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 32px 0px 32px;
+  font-weight: $average-font-weight;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contact-link__icon {
+  fill: currentColor;
+
+  &--prepend {
+    margin-right: 10px;
+  }
+}

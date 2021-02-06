@@ -1,0 +1,33 @@
+.footer {
+  background-color: $dark-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    align-items: baseline;
+  }
+
+  &__box {
+    width: 231px;
+    margin-right: 70px;
+  }
+
+  &__page-logo {
+    margin-bottom: 20px;
+    width: 145px;
+    color: #ffffff;
+  }
+
+  &__join {
+    min-width: 206px;
+    margin-right: 93px;
+  }
+}
+
+.subscription__text,
+.footer__join-text {
+  margin-bottom: 20px;
+  font-weight: $bolt-font-weight;
+  text-transform: uppercase;
+  color: $dark-main-color;
+}
