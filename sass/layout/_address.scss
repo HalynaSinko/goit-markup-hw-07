@@ -2,19 +2,19 @@
   font-style: normal;
   line-height: 1.71;
   color: $dark-main-color;
+}
 
-  &__list {
-    display: inline-block;
-    min-width: 231px;
-  }
+.address__list {
+  display: inline-block;
+  min-width: 231px;
+}
 
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
 
-  &__contact-link {
-    padding-bottom: 2px;
-    padding-top: 2px;
-    color: $dark-secondary-color;
-  }
+.address__contact-link {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  color: $dark-secondary-color;
 }

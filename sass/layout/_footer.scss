@@ -2,26 +2,24 @@
   background-color: $dark-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer__container {
+  align-items: baseline;
+  justify-content: space-between;
+}
 
-  &__container {
-    align-items: baseline;
-  }
+.footer__box {
+  width: 231px;
+}
 
-  &__box {
-    width: 231px;
-    margin-right: 70px;
-  }
+.footer__page-logo {
+  margin-bottom: 20px;
+  width: 145px;
+  color: #ffffff;
+}
 
-  &__page-logo {
-    margin-bottom: 20px;
-    width: 145px;
-    color: #ffffff;
-  }
-
-  &__join {
-    min-width: 206px;
-    margin-right: 93px;
-  }
+.footer__join {
+  min-width: 206px;
 }
 
 .subscription__text,

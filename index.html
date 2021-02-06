@@ -412,61 +412,62 @@
         </div>
         <button class="button subscription__button" type="submit">
           Подписаться
-          <svg class="button__icon--append" width="24" height="24">
+          <svg class="button__icon-send" width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-send"></use>
           </svg>
         </button>
       </form>
     </div>
   </footer>
-
+  <!-- request -->
   <!-- backdrop end modal window -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop backdrop--is-hidden" data-modal>
     <div class="modal">
       <!-- form-application -->
-      <form class="form-application" name="application" autocomplete="on">
-        <p class="call-text text">Оставьте свои данные, мы вам перезвоним</p>
-        <label class="form-label">
-          <span class="label-text">Имя</span>
-          <input type="text" class="form-input" name="name" />
-          <span class="transition-fill">
-            <svg class="form-icon">
+      <form class="form-request" name="application" autocomplete="on">
+        <p class="form-request__text text">Оставьте свои данные, мы вам перезвоним</p>
+        <label class="form-request__label">
+          <span class="form-request__label-text">Имя</span>
+          <input type="text" class="form-request__input" name="name">
+          <span class="form-request__transition-fill">
+            <svg class="form-request__icon">
               <use href="./images/symbol-defs.svg#icon-person-black"></use>
             </svg>
           </span>
         </label>
-        <label class="form-label">
-          <span class="label-text">Телефон</span>
-          <input type="tel" class="form-input" name="tel" />
-          <span class="transition-fill">
-            <svg class="form-icon">
+        <label class="form-request__label">
+          <span class="form-request__label-text">Телефон</span>
+          <input type="tel" class="form-request__input" name="tel">
+          <span class="form-request__transition-fill">
+            <svg class="form-request__icon">
               <use href="./images/symbol-defs.svg#icon-phone-black"></use>
             </svg>
           </span>
         </label>
-        <label class="form-label">
-          <span class="label-text">Почта</span>
-          <input type="email" class="form-input" name="email" />
-          <span class="transition-fill">
-            <svg class="form-icon">
+        <label class="form-request__label">
+          <span class="form-request__label-text">Почта</span>
+          <input type="email" class="form-request__input" name="email">
+          <span class="form-request__transition-fill">
+            <svg class="form-request__icon">
               <use href="./images/symbol-defs.svg#icon-email-black"></use>
             </svg>
           </span>
         </label>
-        <label class="label-comment">
-          <span class="label-text">Комментарий</span>
-          <textarea name="comment" class="form-input comment" placeholder="Введите текст" autocomplete="off"></textarea>
+        <label class="form-request__label-comment">
+          <span class="form-request__label-text">Комментарий</span>
+          <textarea name="comment" class="form-request__input comment" placeholder="Введите текст"
+            autocomplete="off"></textarea>
         </label>
-        <div class="field-agree">
-          <input type="checkbox" class="old-checkbox visually-hidden" id="checkbox" />
-          <label class="label-agree" for="checkbox">Соглашаюсь с рассылкой и принимаю
-            <a class="contract-terms" href="">Условия договора</a>
+        <div class="form-request__field-agree">
+          <input type="checkbox" class="form-request__old-checkbox visually-hidden" id="checkbox">
+          <label class="form-request__label-agree" for="checkbox">Соглашаюсь с рассылкой и принимаю
+            <a class="form-request__contract-terms" href="">Условия договора</a>
           </label>
         </div>
-        <button class="button send-btn" type="submit">Отправить</button>
+        <button class="button form-request__button" type="submit">Отправить</button>
       </form>
-      <button class="modal-btn" data-modal-close>
-        <svg class="close-icon" width="18" height="18">
+      <button class="modal__button" data-modal-close>
+        <svg class="modal__button-icon" width="18" height="18">
           <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
