@@ -9,7 +9,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: $main-background-color;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform $duration $timing-function;
+  @include transition(transform);
 
   .backdrop--is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
@@ -32,7 +32,7 @@
   border-radius: 50%;
   cursor: pointer;
   background: $main-background-color;
-  transition: color $duration $timing-function;
+  @include transition(color);
 
   &:hover,
   &:focus {

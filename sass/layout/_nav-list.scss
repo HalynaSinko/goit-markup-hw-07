@@ -1,13 +1,13 @@
 .nav-list {
   display: flex;
+}
 
-  &__item {
-    position: relative;
-  }
+.nav-list__item {
+  position: relative;
+}
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
+.nav-list__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-list__link {
@@ -16,8 +16,7 @@
   font-weight: $average-font-weight;
   letter-spacing: 0.02em;
   color: $main-color;
-
-  transition: color $duration $timing-function;
+  @include transition(color);
 
   &--active,
   &:hover,
@@ -38,11 +37,11 @@
 
   background-color: $accent-color;
   opacity: 0;
-  transition: opacity $duration $timing-function;
-}
+  @include transition(opacity);
 
-.nav-list__link--active::after,
-.nav-list__link:hover::after,
-.nav-list__link:focus::after {
-  opacity: 1;
+  .nav-list__link--active &,
+  .nav-list__link:hover &,
+  .nav-list__link:focus & {
+    opacity: 1;
+  }
 }

@@ -1,14 +1,8 @@
 .page-logo {
   display: inline-block;
-  font-family: $main-font-family;
+  font-family: $logo-font-family;
   font-weight: $bolt-font-weight;
   font-size: 26px;
   line-height: 1.19;
   color: $accent-color;
-}
-
-.header__page-logo {
-  margin-right: 93px;
-  padding: 24px 1px 25px 1px;
-  color: #000000;
 }

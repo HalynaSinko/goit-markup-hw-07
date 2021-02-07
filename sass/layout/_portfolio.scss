@@ -31,9 +31,7 @@
   background-color: $secondary-background-color;
   box-shadow: none;
 
-  transition: color $duration $timing-function,
-    background-color $duration $timing-function,
-    box-shadow $duration $timing-function;
+  @include transition-three(color, background-color, box-shadow);
 
   &:hover,
   &:focus {
@@ -61,7 +59,7 @@
 .portfolio__link {
   display: block;
   box-shadow: none;
-  transition: box-shadow $duration $timing-function;
+  @include transition(box-shadow);
 
   &:hover,
   &:focus {
@@ -113,7 +111,7 @@
   box-shadow: none;
 
   transform: translateY(100%);
-  transition: transform $duration $timing-function;
+  @include transition(transform);
 
   .portfolio__link:hover &,
   .portfolio__link:focus & {

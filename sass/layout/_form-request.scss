@@ -86,10 +86,10 @@
   height: 120px;
   padding-right: 16px;
   padding-left: 16px;
-}
 
-.comment::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form-request__button {
@@ -124,17 +124,19 @@
   text-decoration-skip-ink: none;
 }
 
-.form-request__label-agree::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 50%;
-  left: 12px;
-  border: 2px solid $main-color;
-  border-radius: 2px;
-  background-color: $main-background-color;
-  transform: translateY(-50%);
+.form-request__label-agree {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 12px;
+    border: 2px solid $main-color;
+    border-radius: 2px;
+    background-color: $main-background-color;
+    transform: translateY(-50%);
+  }
 }
 
 .form-request__old-checkbox:checked + .form-request__label-agree::after {

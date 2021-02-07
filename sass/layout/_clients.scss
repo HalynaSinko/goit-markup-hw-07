@@ -1,19 +1,20 @@
-.customers {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $main-background-color;
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__item {
-    height: 90px;
-    width: 170px;
-  }
 }
 
-.customers__link {
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__item {
+  height: 90px;
+  width: 170px;
+}
+
+.clients__link {
   display: inline-flex;
   width: 100%;
   height: 100%;
@@ -24,9 +25,7 @@
 
   color: $main-color-social-links;
   background-color: $main-background-color;
-
-  transition: color $duration $timing-function,
-    border-color $duration $timing-function;
+  @include transition-two(color, border-color);
 
   &:hover,
   &:focus {
@@ -35,6 +34,6 @@
   }
 }
 
-.customers__logo-icon {
+.clients__logo-icon {
   fill: currentColor;
 }
